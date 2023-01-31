@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="secondCollectionViewCell" id="gTV-IL-0wX" customClass="SecondCollectionViewCell" customModule="AppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="township" translatesAutoresizingMaskIntoConstraints="NO" id="n2H-39-lua">
+                        <rect key="frame" x="8" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Qlf-wx-4g6"/>
+                            <constraint firstAttribute="height" constant="80" id="x8S-4M-JYl"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-i3-574">
+                        <rect key="frame" x="98" y="25" width="104.5" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOO-Nq-2T6">
+                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmC-wG-kai">
+                                <rect key="frame" x="0.0" y="25" width="104.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-Yx-kyf">
+                        <rect key="frame" x="268" y="25" width="80" height="36"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Kbl-Xw-dS7"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="GET">
+                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-App Purchases" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFn-TJ-rcw">
+                        <rect key="frame" x="262" y="65" width="86" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="lT8-i3-574" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="0Fc-sh-yJ4"/>
+                <constraint firstAttribute="trailing" secondItem="XFn-TJ-rcw" secondAttribute="trailing" constant="6" id="A0x-77-V8F"/>
+                <constraint firstItem="XFn-TJ-rcw" firstAttribute="top" secondItem="cPB-Yx-kyf" secondAttribute="bottom" constant="4" id="BFa-kW-Shi"/>
+                <constraint firstAttribute="trailing" secondItem="cPB-Yx-kyf" secondAttribute="trailing" constant="6" id="UMe-zO-f90"/>
+                <constraint firstItem="n2H-39-lua" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="cf6-ou-dG3"/>
+                <constraint firstItem="cPB-Yx-kyf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="dsA-uJ-0D7"/>
+                <constraint firstAttribute="bottom" secondItem="cPB-Yx-kyf" secondAttribute="bottom" constant="39" id="fJG-nY-ouF"/>
+                <constraint firstItem="n2H-39-lua" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="nrP-cq-ueh"/>
+                <constraint firstItem="lT8-i3-574" firstAttribute="leading" secondItem="n2H-39-lua" secondAttribute="trailing" constant="10" id="tzN-4C-sQG"/>
+            </constraints>
+            <size key="customSize" width="354" height="70"/>
+            <connections>
+                <outlet property="downloadButton" destination="cPB-Yx-kyf" id="E7P-ah-L5N"/>
+                <outlet property="gameCategoryLabel" destination="JmC-wG-kai" id="ohU-PG-21y"/>
+                <outlet property="gameImage" destination="n2H-39-lua" id="v4M-Z3-Cqo"/>
+                <outlet property="gameNameLabel" destination="vOO-Nq-2T6" id="iBj-vn-kQD"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="90.401785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="township" width="1200" height="675"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
